@@ -122,6 +122,16 @@ p +
   theme_ber() 
 ```
 
+### Aligning Title and subtitle
+
+To align the title and subtile with the leftmost edge of the plot you can include the following. The hjust parameter needs to be manually adjusted to suit your plot. If it is falling off the plot, make the parameter smaller (e.g -0.05), but if it is too far to the left, make the parameter larger (e.g -0.15).
+
+```{r eval=FALSE, include=TRUE}
+ 
+p + theme(plot.title = element_text(hjust = -0.1),
+          plot.subtitle = element_text(hjust = -0.1))
+
+```
 
 ### Mixed Chart
 
